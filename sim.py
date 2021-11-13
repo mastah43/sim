@@ -1,4 +1,5 @@
-from flask import Flask
+import flask
+from flask import Flask, Response
 import simpy
 
 
@@ -41,12 +42,11 @@ world.run()
 
 @app.route('/')
 def world_state():
-    return print("hello")
-    # TODO return world.world_message
+    return Response(world.world_message, mimetype="text/plain")
 
 
 # for development purposes, not used by docker container
 if __name__ == '__main__':
     print("starting web server")
-    app.run()
+    app.run(port=5000, debug=True, host='0.0.0.0')
 

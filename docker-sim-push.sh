@@ -1,5 +1,5 @@
 #!/bin/bash
-source config.sh
+source docker-sim-config.sh
 REGISTRY_HOST=371275193966.dkr.ecr.eu-central-1.amazonaws.com
 aws ecr get-login-password --region ${AWS_REGION} --profile ${AWS_PROFILE} | docker login --username AWS --password-stdin ${REGISTRY_HOST}
 TAG=sim:latest

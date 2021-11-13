@@ -1,3 +1,3 @@
 #!/bin/bash
-source config.sh
+source docker-sim-config.sh
 docker build -t ${DOCKER_IMAGE} .
