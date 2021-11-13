@@ -1,0 +1,4 @@
+AWS_REGION=eu-central-1
+AWS_PROFILE=mlops-expl-dev
+DOCKER_IMAGE=sim:v1
+CONTAINER_NAME=sim

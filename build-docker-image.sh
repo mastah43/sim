@@ -1,2 +1,3 @@
 #!/bin/bash
-docker build -t sim:v1 .
+source config.sh
+docker build -t $DOCKER_IMAGE .

@@ -36,14 +36,17 @@ class World:
 
 app = Flask(__name__)
 world = World()
+world.run()
 
 
 @app.route('/')
 def world_state():
-    return world.world_message
+    return print("hello")
+    # TODO return world.world_message
 
 
+# for development purposes, not used by docker container
 if __name__ == '__main__':
-    world.run()
+    print("starting web server")
     app.run()
 
