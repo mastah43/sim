@@ -10,6 +10,7 @@ It is planned to be run in Amazon EKS.
 - run multiple worlds in cluster
 - run a distributed single large simulation in cluster using Elastic Cache
 - forward AWS temporary access credentials to docker container on startup
+- use AWS common runtime with boto3, see https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html
 - send streaming events (see also https://boto3.amazonaws.com/v1/documentation/api/latest/guide/quickstart.html)
 - receive streaming events with Kinesis and send to S3
 - process streaming event with Kinesis data streams
